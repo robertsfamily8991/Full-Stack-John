@@ -56,7 +56,7 @@ p {
 
 .white-section {
   background-color: #ffffff;
-  padding-top: 0rem;
+  padding: 3% 4% 3%;
 }
 
 /* Headings */
@@ -270,7 +270,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
-    margin-left: 15px;
+    margin-left: 6px;
   }
 
   .projects-text {
