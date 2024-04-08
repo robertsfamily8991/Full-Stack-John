@@ -43,13 +43,15 @@ p {
 
 /* Containers */
 .container-fluid {
-  padding: 5% 15% 5%;
+  padding: 3% 15% 3%;
 }
 
 /* Sections */
 .colored-section {
   background-color: #1a1d27;
   color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .white-section {
