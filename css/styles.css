@@ -14,6 +14,11 @@ p {
 }
 
 /* Special Text */
+.autocorrect {
+  color: #c74f50;
+  font-weight: bold;
+}
+
 .pro-bold {
   color: #a1ce71;
   font-weight: bold;
@@ -270,7 +275,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     line-height: 1.5;
-    margin-left: 15px;
+    margin-left: 6px;
   }
 
   .projects-text {
