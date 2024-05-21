@@ -1,2 +1,2 @@
 <h1>Full-Stack John</h1>
-<p>I'm a drone pilot, radio operator, programmer, entrepreneur and estimator offering Tech Support & IT Services near Sandpoint, ID.</p>
+<p>Hello, I'm John - a drone pilot, web developer and programmer based in Sandpoint, ID.</p>
