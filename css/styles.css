@@ -259,6 +259,11 @@ p {
     transform: rotate(0);
   }
 
+  /* Containers */
+  .container-fluid {
+  padding: 3% 6% 3%;
+  }
+
   #title {
     text-align: center;
   }
