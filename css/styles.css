@@ -211,6 +211,10 @@ p {
   font-weight: 700;
 }
 
+.line {
+  border-top: 1px solid white;
+  max-width: 60%;
+}
 
 /* Footer Section */
 
