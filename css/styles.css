@@ -165,6 +165,12 @@ p {
   margin-bottom: 3rem;
 }
 
+.projectheader {
+  color: #fff;
+  font-weight: bold;
+  padding-top: 1rem;
+  }
+
 .projects-image {
   width: 10%;
   border-radius: 100%;
@@ -255,6 +261,17 @@ p {
 }
 
 
+/* Résumé Modal Popup */
+.modaltext {
+  color: #212529;
+}
+
+.modaltitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+
 /* Media Setting */
 @media (max-width: 1028px) {
   .main_pic {
@@ -286,6 +303,7 @@ p {
     line-height: 1.5;
     margin-left: 6px;
   }
+
 
   .projects-text {
     font-size: 1.5rem;
