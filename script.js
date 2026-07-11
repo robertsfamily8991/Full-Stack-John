@@ -1,106 +1,91 @@
 /*
-========================================
-FULL-STACK JOHN V4
+==========================================
+FULL-STACK JOHN V7
 SCRIPT.JS
-========================================
+
+Features:
+- Mobile Navigation
+- Project Gallery Slider
+- Scroll Animations
+- Form UX
+- Footer Year
+==========================================
 */
 
 
-/* =========================
-MOBILE MENU
-========================= */
+/* ======================================
+   MOBILE NAVIGATION
+====================================== */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
 
 
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".main-nav");
+if (menuToggle && mainNav) {
 
+    menuToggle.addEventListener("click", () => {
 
-if (menuButton && navigation) {
+        mainNav.classList.toggle("active");
 
-
-    menuButton.addEventListener("click", () => {
-
-
-        navigation.classList.toggle("active");
-
+        menuToggle.classList.toggle("open");
 
     });
-
 
 }
 
 
 
+document.querySelectorAll(".main-nav a")
+    .forEach(link => {
 
+        link.addEventListener("click", () => {
 
-/* =========================
-CLOSE MOBILE MENU
-========================= */
+            if (mainNav) {
 
+                mainNav.classList.remove("active");
 
-const navLinks = document.querySelectorAll(".main-nav a");
+            }
 
-
-navLinks.forEach(link => {
-
-
-    link.addEventListener("click", () => {
-
-
-        if (navigation) {
-
-            navigation.classList.remove("active");
-
-        }
-
+        });
 
     });
 
 
-});
 
 
 
 
-
-
-
-
-
-/* =========================
-PORTFOLIO GALLERIES
-========================= */
+/* ======================================
+   PROJECT GALLERY
+====================================== */
 
 
 const galleries = {
 
-
     selkirk: [
 
-        "images/selkirk-1.jpg",
-        "images/selkirk-2.jpg",
-        "images/selkirk-3.jpg",
-        "images/selkirk-4.jpg"
+        "images/portfolio/selkirk-1.webp",
+        "images/portfolio/selkirk-2.webp",
+        "images/portfolio/selkirk-3.webp",
+        "images/portfolio/selkirk-4.webp"
 
     ],
-
 
 
     business: [
 
-        "images/business-1.jpg",
-        "images/business-2.jpg",
-        "images/business-3.jpg"
+        "images/portfolio/business-1.webp",
+        "images/portfolio/business-2.webp",
+        "images/portfolio/business-3.webp"
 
     ],
 
 
-
     ecommerce: [
 
-        "images/ecommerce-1.jpg",
-        "images/ecommerce-2.jpg",
-        "images/ecommerce-3.jpg"
+        "images/portfolio/ecommerce-1.webp",
+        "images/portfolio/ecommerce-2.webp",
+        "images/portfolio/ecommerce-3.webp"
 
     ]
 
@@ -110,30 +95,15 @@ const galleries = {
 
 
 
+const galleryModal = document.querySelector(".gallery-modal");
+const galleryImage = document.querySelector(".gallery-image");
 
-const modal =
-document.querySelector(".gallery-modal");
-
-
-const galleryImage =
-document.querySelector(".gallery-image");
-
-
-const closeButton =
-document.querySelector(".gallery-close");
-
-
-const nextButton =
-document.querySelector(".gallery-next");
-
-
-const previousButton =
-document.querySelector(".gallery-prev");
-
+const galleryClose = document.querySelector(".gallery-close");
+const galleryNext = document.querySelector(".gallery-next");
+const galleryPrev = document.querySelector(".gallery-prev");
 
 
 let currentGallery = [];
-
 let currentIndex = 0;
 
 
@@ -141,93 +111,54 @@ let currentIndex = 0;
 
 
 
+/* Open Gallery */
 
 
-/* =========================
-OPEN GALLERY
-========================= */
+document.querySelectorAll(".portfolio-button")
+    .forEach(button => {
+
+        button.addEventListener("click", () => {
 
 
-const projectButtons =
-document.querySelectorAll(".portfolio-button");
+            const galleryName =
+                button.dataset.gallery;
 
 
-
-projectButtons.forEach(button => {
-
-
-
-    button.addEventListener("click", () => {
+            currentGallery =
+                galleries[galleryName];
 
 
-
-        const gallery =
-        button.dataset.gallery;
+            currentIndex = 0;
 
 
-
-        currentGallery =
-        galleries[gallery];
+            updateGallery();
 
 
-
-        currentIndex = 0;
-
+            galleryModal.classList.add("active");
 
 
-        showGallery();
+            document.body.style.overflow = "hidden";
 
 
+        });
 
     });
 
 
 
-});
 
 
 
+function updateGallery() {
 
 
+    if (
+        galleryImage &&
+        currentGallery.length
+    ) {
 
-
-function showGallery(){
-
-
-    if(!modal || !galleryImage) return;
-
-
-
-    galleryImage.src =
-    currentGallery[currentIndex];
-
-
-
-    modal.classList.add("active");
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* =========================
-CLOSE GALLERY
-========================= */
-
-
-function closeGallery(){
-
-
-    if(modal){
-
-        modal.classList.remove("active");
+        galleryImage.src =
+            currentGallery[currentIndex];
 
     }
 
@@ -237,56 +168,31 @@ function closeGallery(){
 
 
 
-if(closeButton){
-
-
-    closeButton.addEventListener(
-        "click",
-        closeGallery
-    );
-
-
-}
 
 
 
+/* Next Image */
 
 
+if (galleryNext) {
 
-
-/* =========================
-NEXT IMAGE
-========================= */
-
-
-if(nextButton){
-
-
-    nextButton.addEventListener(
-        "click",
-        () => {
+    galleryNext.addEventListener("click", () => {
 
 
         currentIndex++;
 
 
-        if(currentIndex >= currentGallery.length){
-
+        if (currentIndex >= currentGallery.length) {
 
             currentIndex = 0;
-
 
         }
 
 
-
-        galleryImage.src =
-        currentGallery[currentIndex];
-
+        updateGallery();
 
 
     });
-
 
 }
 
@@ -295,42 +201,29 @@ if(nextButton){
 
 
 
+/* Previous Image */
 
 
-/* =========================
-PREVIOUS IMAGE
-========================= */
+if (galleryPrev) {
 
-
-if(previousButton){
-
-
-    previousButton.addEventListener(
-        "click",
-        () => {
+    galleryPrev.addEventListener("click", () => {
 
 
         currentIndex--;
 
 
-        if(currentIndex < 0){
-
+        if (currentIndex < 0) {
 
             currentIndex =
-            currentGallery.length - 1;
-
+                currentGallery.length - 1;
 
         }
 
 
-
-        galleryImage.src =
-        currentGallery[currentIndex];
-
+        updateGallery();
 
 
     });
-
 
 }
 
@@ -339,22 +232,74 @@ if(previousButton){
 
 
 
+/* Close Gallery */
+
+
+function closeGallery() {
+
+
+    if (galleryModal) {
+
+
+        galleryModal.classList.remove("active");
+
+
+        document.body.style.overflow = "auto";
+
+
+    }
+
+
+}
 
 
 
-/* =========================
-KEYBOARD CONTROLS
-========================= */
+
+if (galleryClose) {
+
+    galleryClose.addEventListener(
+        "click",
+        closeGallery
+    );
+
+}
 
 
-document.addEventListener(
-"keydown",
-(event) => {
 
 
 
-    if(!modal ||
-       !modal.classList.contains("active")){
+if (galleryModal) {
+
+    galleryModal.addEventListener(
+        "click",
+        event => {
+
+
+            if (event.target === galleryModal) {
+
+                closeGallery();
+
+            }
+
+
+        }
+    );
+
+}
+
+
+/* ======================================
+   KEYBOARD GALLERY CONTROLS
+====================================== */
+
+
+document.addEventListener("keydown", event => {
+
+
+    if (
+        !galleryModal ||
+        !galleryModal.classList.contains("active")
+    ) {
 
         return;
 
@@ -362,39 +307,27 @@ document.addEventListener(
 
 
 
-
-    if(event.key === "Escape"){
-
+    if (event.key === "Escape") {
 
         closeGallery();
 
+    }
+
+
+
+    if (event.key === "ArrowRight" && galleryNext) {
+
+        galleryNext.click();
 
     }
 
 
 
+    if (event.key === "ArrowLeft" && galleryPrev) {
 
-
-    if(event.key === "ArrowRight"){
-
-
-        nextButton.click();
-
+        galleryPrev.click();
 
     }
-
-
-
-
-
-    if(event.key === "ArrowLeft"){
-
-
-        previousButton.click();
-
-
-    }
-
 
 
 });
@@ -406,104 +339,86 @@ document.addEventListener(
 
 
 
-
-/* =========================
-CLICK OUTSIDE CLOSE
-========================= */
-
-
-if(modal){
+/* ======================================
+   SCROLL REVEAL ANIMATIONS
+====================================== */
 
 
-    modal.addEventListener(
-    "click",
-    (event)=>{
-
-
-        if(event.target === modal){
-
-
-            closeGallery();
-
-
-        }
-
-
-    });
-
-
-}
-
-
-
-
-
-
-
-
-
-/* =========================
-SCROLL ANIMATIONS
-========================= */
-
-
-const animatedElements =
-document.querySelectorAll(
-`
-.info-card,
+const revealElements =
+    document.querySelectorAll(
+        `
+.outcome-card,
 .service-card,
 .portfolio-card,
-.plan-card,
+.testimonial-card,
+.about-card,
 .process-card,
-.testimonial-card
+.plan-card
 `
-);
-
-
-
-const observer =
-new IntersectionObserver(
-(entries)=>{
-
-
-entries.forEach(entry=>{
-
-
-    if(entry.isIntersecting){
-
-
-        entry.target.classList.add(
-            "visible"
-        );
-
-
-    }
-
-
-});
-
-
-},
-{
-
-threshold:.15
-
-});
-
-
-
-
-
-animatedElements.forEach(element=>{
-
-
-    element.classList.add(
-        "fade-up"
     );
 
 
-    observer.observe(element);
 
+revealElements.forEach(element => {
+
+
+    element.style.opacity = "0";
+
+    element.style.transform =
+        "translateY(25px)";
+
+    element.style.transition =
+        "opacity .6s ease, transform .6s ease";
+
+
+});
+
+
+
+
+
+
+const revealObserver =
+    new IntersectionObserver(entries => {
+
+
+        entries.forEach(entry => {
+
+
+            if (entry.isIntersecting) {
+
+
+                entry.target.style.opacity = "1";
+
+
+                entry.target.style.transform =
+                    "translateY(0)";
+
+
+                revealObserver.unobserve(
+                    entry.target
+                );
+
+
+            }
+
+
+        });
+
+
+    },
+        {
+            threshold: .15
+        });
+
+
+
+
+
+
+revealElements.forEach(element => {
+
+    revealObserver.observe(element);
 
 });
 
@@ -514,40 +429,94 @@ animatedElements.forEach(element=>{
 
 
 
-
-/* =========================
-FORMSPREE FORM UX
-========================= */
-
+/* ======================================
+   FORMSPREE AJAX SUBMISSION
+   Keeps visitors on this page
+====================================== */
 
 const contactForm =
-document.querySelector(".contact-form");
+    document.querySelector(".contact-form");
 
 
+if (contactForm) {
 
-if(contactForm){
+    contactForm.addEventListener("submit", async function (event) {
 
-
-
-    const submitButton =
-    contactForm.querySelector("button");
+        event.preventDefault();
 
 
-
-    contactForm.addEventListener(
-    "submit",
-    ()=>{
+        const button =
+            contactForm.querySelector(".submit-btn");
 
 
-        if(submitButton){
+        const successMessage =
+            contactForm.querySelector(".form-success");
 
 
-            submitButton.innerHTML =
+        const formData =
+            new FormData(contactForm);
+
+
+        button.textContent =
             "Sending...";
 
 
-            submitButton.disabled =
-            true;
+        button.disabled = true;
+
+
+
+        try {
+
+
+            const response =
+                await fetch(
+                    contactForm.action,
+                    {
+                        method: "POST",
+                        body: formData,
+                        headers: {
+                            "Accept": "application/json"
+                        }
+                    }
+                );
+
+
+
+            if (response.ok) {
+
+
+                contactForm.reset();
+
+
+                button.style.display = "none";
+
+
+                successMessage.style.display = "block";
+
+
+            }
+            else {
+
+
+                button.textContent =
+                    "Try Again";
+
+
+                button.disabled = false;
+
+
+            }
+
+
+
+        } catch (error) {
+
+
+            button.textContent =
+                "Try Again";
+
+
+            button.disabled = false;
 
 
         }
@@ -555,6 +524,32 @@ if(contactForm){
 
     });
 
+}
+
+
+
+
+
+
+
+
+/* ======================================
+   FOOTER YEAR
+====================================== */
+
+
+const footerYear =
+    document.querySelector(".footer-bottom p");
+
+
+
+
+if (footerYear) {
+
+
+    footerYear.textContent =
+        `© ${new Date().getFullYear()} Full-Stack John. All Rights Reserved.`;
+
 
 }
 
@@ -565,23 +560,54 @@ if(contactForm){
 
 
 
-/* =========================
-FOOTER YEAR
-========================= */
+/* ======================================
+   SMOOTH SCROLL OFFSET
+====================================== */
 
 
-const footerText =
-document.querySelector(
-".footer-bottom p"
-);
+document.querySelectorAll('a[href^="#"]')
+    .forEach(anchor => {
+
+
+        anchor.addEventListener("click", function (event) {
+
+
+            const target =
+                document.querySelector(
+                    this.getAttribute("href")
+                );
 
 
 
-if(footerText){
+            if (target) {
 
 
-    footerText.textContent =
-    `© ${new Date().getFullYear()} Full-Stack John. All Rights Reserved.`;
+                event.preventDefault();
 
 
-}
+
+                const headerOffset = 90;
+
+
+
+                const position =
+                    target.offsetTop - headerOffset;
+
+
+
+                window.scrollTo({
+
+                    top: position,
+
+                    behavior: "smooth"
+
+                });
+
+
+            }
+
+
+        });
+
+
+    });
