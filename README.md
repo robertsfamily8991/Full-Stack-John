@@ -1,1 +1,1 @@
-Professional website design, drone media, online visibility, ecommerce development, and digital solutions for businesses, passion projects, and fly-by-night side hustles.
+ Website design, drone media, and online visibility solutions built around real business needs.
