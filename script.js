@@ -3,32 +3,34 @@
 
 /* =========================================================== MOBILE MENU =========================================================== */
 
-const menuBtn = document.querySelector(".menu-btn");
+/* =========================================================== MOBILE MENU =========================================================== */
+
+const menuToggle = document.querySelector(".menu-btn");
 const nav = document.querySelector(".main-nav");
 
-if (menuBtn && nav) {
+if (menuToggle && nav) {
 
-    menuBtn.addEventListener("click", () => {
+    menuToggle.addEventListener("click", () => {
 
         nav.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+        menuToggle.textContent = nav.classList.contains("active") ? "✕" : "☰";
+
+    });
+
+    document.querySelectorAll(".main-nav a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            nav.classList.remove("active");
+            menuToggle.classList.remove("open");
+            menuToggle.textContent = "☰";
+
+        });
 
     });
 
 }
-
-document.querySelectorAll(".main-nav a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        if (nav) {
-
-            nav.classList.remove("active");
-
-        }
-
-    });
-
-});
 
 /* =========================================================== CAROUSEL CONTROLS =========================================================== */
 
