@@ -492,6 +492,12 @@ p {
     color: white;
 }
 
+.custom-tools {
+    padding-top: 7%;
+    text-align: center;
+
+}
+
 /* =========================================================== EXPERIENCE =========================================================== */
 
 .experience-section {
