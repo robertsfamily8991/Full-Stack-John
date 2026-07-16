@@ -175,7 +175,7 @@ if (form) {
 const revealElements = document.querySelectorAll(
 
     ".service-section,\
-.work-card,\
+// .work-card,\
 .experience-item,\
 .testimonial-card,\
 .support-card,\
