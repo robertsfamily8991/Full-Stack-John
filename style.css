@@ -1165,6 +1165,10 @@ p {
         font-size: .95rem;
     }
 
+    .plan-card ul {
+        padding-left: 20px;
+    }
+    
     .plan-card li {
         font-size: .95rem;
         padding: 8px 0;
