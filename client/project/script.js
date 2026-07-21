@@ -17,7 +17,7 @@
 // const GITHUB_REPOSITORY = "YOUR-REPOSITORY-NAME";
 // const GITHUB_BRANCH = "main";
 
-const GITHUB_OWNER = "robertsfamily8991.github.io";
+const GITHUB_OWNER = "robertsfamily8991";
 const GITHUB_REPOSITORY = "210-s-3rd-ave";
 const GITHUB_BRANCH = "main";
 
