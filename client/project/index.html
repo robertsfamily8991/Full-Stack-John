@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Property Media Portal | Full-Stack John</title>
+
+    <meta
+        name="description"
+        content="Private property media portal by Full-Stack John."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         PASSWORD SCREEN
+    ====================================================== -->
+
+    <section
+        class="password-screen"
+        id="passwordScreen"
+    >
+
+        <div class="password-card">
+
+            <div class="brand-mark">
+                FULL-STACK JOHN
+            </div>
+
+            <div class="password-icon">
+                🔒
+            </div>
+
+            <h1>
+                Private Media Portal
+            </h1>
+
+            <p>
+                Enter your access password to view and download property media.
+            </p>
+
+            <form id="passwordForm">
+
+                <label for="passwordInput">
+                    Access Password
+                </label>
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter password"
+                    autocomplete="off"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Access Portal
+                </button>
+
+                <p
+                    class="password-error"
+                    id="passwordError"
+                >
+                    Incorrect password.
+                </p>
+
+            </form>
+
+            <div class="portal-footer">
+                Delivered by <strong>Full-Stack John</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAIN PORTAL
+    ====================================================== -->
+
+    <main
+        class="portal"
+        id="portal"
+    >
+
+
+        <!-- HEADER -->
+
+        <header class="portal-header">
+
+            <div class="header-inner">
+
+                <div class="brand">
+                    FULL-STACK JOHN
+                </div>
+
+                <div class="header-label">
+                    PROPERTY MEDIA PORTAL
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PROPERTY HERO -->
+
+        <section class="property-hero">
+
+            <div class="container">
+
+                <div class="property-info">
+
+                    <p class="eyebrow">
+                        PROPERTY MEDIA
+                    </p>
+
+                    <h1 id="propertyAddress">
+                        Loading Property...
+                    </h1>
+
+                    <p
+                        class="property-location"
+                        id="propertyLocation"
+                    >
+                        Loading...
+                    </p>
+
+                    <p
+                        class="property-description"
+                        id="propertyDescription"
+                    >
+                        Loading property information...
+                    </p>
+
+                </div>
+
+                <div class="property-actions">
+
+                    <a
+                        href="downloads/property-media.zip"
+                        class="btn btn-primary"
+                        download
+                    >
+                        ↓ Download All Media
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTOS -->
+
+        <section class="media-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            PROPERTY PHOTOGRAPHY
+                        </p>
+
+                        <h2>
+                            Photos
+                        </h2>
+
+                    </div>
+
+                    <span
+                        class="media-count"
+                        id="photoCount"
+                    >
+                        Loading Photos
+                    </span>
+
+                </div>
+
+                <div
+                    class="photo-grid"
+                    id="photoGrid"
+                >
+
+                    <div class="loading-message">
+                        Loading property photos...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEOS -->
+
+        <section class="media-section video-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            PROPERTY VIDEO
+                        </p>
+
+                        <h2>
+                            Videos
+                        </h2>
+
+                    </div>
+
+                    <span
+                        class="media-count"
+                        id="videoCount"
+                    >
+                        Loading Videos
+                    </span>
+
+                </div>
+
+                <div
+                    class="video-grid"
+                    id="videoGrid"
+                >
+
+                    <div class="loading-message">
+                        Loading property videos...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOWNLOAD CTA -->
+
+        <section class="download-section">
+
+            <div class="container">
+
+                <div class="download-card">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            COMPLETE PROJECT FILES
+                        </p>
+
+                        <h2>
+                            Download everything in one file.
+                        </h2>
+
+                        <p>
+                            Download all available property photos and videos
+                            as a single ZIP file.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="downloads/property-media.zip"
+                        class="btn btn-primary"
+                        download
+                    >
+                        ↓ Download All Media
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="portal-footer-main">
+
+            <div class="container">
+
+                <div class="footer-inner">
+
+                    <strong>
+                        FULL-STACK JOHN
+                    </strong>
+
+                    <span>
+                        Websites & Digital Operations
+                    </span>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+        >
+            ×
+        </button>
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+        >
+            ‹
+        </button>
+
+        <img
+            src=""
+            alt=""
+            id="lightboxImage"
+        >
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
