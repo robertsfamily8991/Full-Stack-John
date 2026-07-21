@@ -249,7 +249,7 @@ function getGitHubFolderURL(
     folder
 ) {
 
-    return `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPOSITORY}/contents/${folder}?ref=${GITHUB_BRANCH}`;
+    return `https://api.github.com/repos/robertsfamily8991/210-s-3rd-ave/contents/${folder}?ref=$main`;
 
 }
 
