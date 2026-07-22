@@ -3,7 +3,8 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- ========================================================= GOOGLE ANALYTICS ========================================================== -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ3JBQ45YF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -12,41 +13,76 @@
         gtag('config', 'G-YQ3JBQ45YF');
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-K7Z2Z58B');</script>
-    <!-- End Google Tag Manager -->
+    <!-- ========================================================= GOOGLE TAG MANAGER ========================================================== -->
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K7Z2Z58B');
+    </script>
+
+    <!-- ========================================================= CORE DOCUMENT SETTINGS ========================================================== -->
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title -->
-    <title>Full-Stack John | Website Design | Drone Media | Online Visibility</title>
+    <!-- ========================================================= SEO ========================================================== -->
 
-    <!-- SEO -->
-    <meta name="description" content="Professional website design, drone media, online visibility, ecommerce development, and digital solutions for businesses, passion projects, and fly-by-night side hustles.">
-    <meta name="keywords" content="website design, web development, drone media, drone photography, aerial video, online visibility, ecommerce development, local SEO">
+    <title>Web Design & Digital Operations | Full-Stack John</title>
 
-    <!-- Favicons -->
+    <meta name="description" content="Full-Stack John builds and supports websites, ecommerce stores, and digital operations for businesses in Summerville, SC, Sandpoint, ID, and nationwide.">
+    <meta name="author" content="Full-Stack John">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.fullstackjohn.com/">
+
+    <!-- ========================================================= OPEN GRAPH / SOCIAL SHARING ========================================================== -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Design & Digital Operations | Full-Stack John">
+    <meta property="og:description" content="Websites, ecommerce support, maintenance, and digital operations from one trusted technical partner.">
+    <meta property="og:url" content="https://www.fullstackjohn.com/">
+    <meta property="og:site_name" content="Full-Stack John">
+    <meta property="og:image" content="https://www.fullstackjohn.com/images/og-image.jpg">
+
+    <!-- ========================================================= TWITTER / X ========================================================== -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Design & Digital Operations | Full-Stack John">
+    <meta name="twitter:description" content="Websites, ecommerce support, maintenance, and digital operations from one trusted technical partner.">
+    <meta name="twitter:image" content="https://www.fullstackjohn.com/images/og-image.jpg">
+
+    <!-- ========================================================= FAVICONS ========================================================== -->
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
-    <link rel="icon" type="/image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <link rel="manifest" href="images/icons/site.webmanifest">
     <link rel="shortcut icon" href="images/icons/favicon.ico">
+
     <meta name="theme-color" content="#0b0f19">
 
-    <!-- Fonts -->
+    <!-- ========================================================= FONTS ========================================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
+    <!-- ========================================================= STYLES ========================================================== -->
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -96,10 +132,7 @@
 
                 <h1>Helping customers find and understand what you do.</h1>
 
-                <p class="hero-text">I help start-up companies and growing businesses build a stronger online presence
-                    through <strong>website
-                        design</strong>, <strong>drone media</strong>, and <strong>online visibility services</strong>.
-                </p>
+                <p class="hero-text">I help start-up companies and growing businesses build a stronger online presence through <strong>website design</strong>, <strong>drone media</strong>, and <strong>online visibility services</strong>.</p>
 
                 <div class="hero-actions">
                     <button class="btn btn-primary header-btn" onclick="window.location.href='#contact'">Free Consultation</button>
@@ -108,8 +141,8 @@
                     <!-- <a href="#work" class="btn btn-secondary">View My Work</a> -->
                 </div>
 
-                <p class="hero-location">Based in <strong>Summerville, SC</strong> • Supporting projects
-                    in <strong>Sandpoint, ID</strong> and beyond.</p>
+                <p class="hero-location">Based in <strong>Summerville, SC</strong> • Supporting projects in <strong>Sandpoint, ID</strong> and beyond.</p>
+              
                 <div class="hero-points">
 
                     <div>
@@ -151,11 +184,7 @@
 
                 <h2>Curated around your business needs.</h2>
 
-                <p>Your digital assets should do more than look good. They should help people find you, trust you, and
-                    take
-                    action. That's why every project starts with understanding your objectives, your customers, and the
-                    challenges you're trying
-                    to solve.</p>
+                <p>Your digital assets should do more than look good. They should help people find you, trust you, and take action. That's why every project starts with understanding your objectives, your customers, and the challenges you're trying to solve.</p>
 
             </div>
 
@@ -198,9 +227,7 @@
 
                 <h2>Websites that represent the quality of your business.</h2>
 
-                <p>Your site is often the first interaction visitors have with your business. I create professional
-                    websites, premium guest experiences, and mobile-first designs that help build trust and convert
-                    customers.</p>
+                <p>Your site is often the first interaction visitors have with your business. I create professional websites, premium guest experiences, and mobile-first designs that help build trust and convert customers.</p>
 
                 <div class="service-features">
 
@@ -242,8 +269,7 @@
 
                 <h2>Show your work from every angle.</h2>
 
-                <p>Professional drone photography, aerial video, and visual content help businesses showcase properties,
-                    projects, and capabilities in ways traditional imagery can't.</p>
+                <p>Professional drone photography, aerial video, and visual content help businesses showcase properties, projects, and capabilities in ways traditional imagery can't.</p>
 
                 <div class="service-features">
 
@@ -297,8 +323,7 @@
 
                 <h2>Make your business easier to find, easier to understand, and easier to choose.</h2>
 
-                <p>Great companies deserves to be seen. I help improve online visibility through stronger
-                    websites, better business profiles, quality content, and digital improvements.</p>
+                <p>Great companies deserves to be seen. I help improve online visibility through stronger websites, better business profiles, quality content, and digital improvements.</p>
 
                 <div class="service-features">
 
@@ -340,8 +365,7 @@
 
                 <h2>Projects built around real challenges.</h2>
 
-                <p>A collection of websites, ecommerce platforms, and digital solutions built to improve visibility and
-                    operations.</p>
+                <p>A collection of websites, ecommerce platforms, and digital solutions built to improve visibility and operations.</p>
 
             </div>
 
@@ -361,8 +385,7 @@
 
                             <h3>Selkirk Off Road</h3>
 
-                            <p>A complete digital presence created for an off-road business focused on services, builds,
-                                and future ecommerce growth.</p>
+                            <p>A complete digital presence created for an off-road business focused on services, builds, and future ecommerce growth.</p>
 
                             <div class="work-details">
                                 <!-- <span>Overland Builds</span>
@@ -387,16 +410,13 @@
 
                             <h3>Djali Black</h3>
 
-                            <p>A professional website designed to help attract customers, build loyalty and convert
-                                leads into paying clients.</p>
+                            <p>A professional website designed to help attract customers, build loyalty and convert leads into paying clients.</p>
 
                             <div class="work-details">
                                 <!-- <span>Brand Development</span>
                                 <span>Services Presentation</span>
                                 <span>Lead Generation</span> -->
-                                <a href="https://www.myretirementspecialist.com" target="_blank"
-                                    class="btn btn-primary">View Project</a>
-
+                                <a href="https://www.myretirementspecialist.com" target="_blank" class="btn btn-primary">View Project</a>
                             </div>
 
                         </div>
@@ -413,15 +433,13 @@
 
                             <h3>Datum Geospace</h3>
 
-                            <p>A specialized project including drone services, process improvement, and visual data
-                                solutions.</p>
+                            <p>A specialized project including drone services, process improvement, and visual data solutions.</p>
 
                             <div class="work-details">
                                 <!-- <span>Aerial Media</span>
                                 <span>Mapping</span>
                                 <span>Visualization</span> -->
-                                <a href="https://www.datumgeospace.com" target="_blank" class="btn btn-primary">View
-                                    Project</a>
+                                <a href="https://www.datumgeospace.com" target="_blank" class="btn btn-primary">View Project</a>
                             </div>
 
                         </div>
@@ -438,15 +456,13 @@
 
                             <h3>Diamond EDC</h3>
 
-                            <p>A premium ecommerce store focused on product presentation, customer engagement, and
-                                scalable growth.</p>
+                            <p>A premium ecommerce store focused on product presentation, customer engagement, and scalable growth.</p>
 
                             <div class="work-details">
                                 <!-- <span>WooCommerce</span>
                                 <span>Product Systems</span>
                                 <span>Online Store</span> -->
-                                <a href="https://www.diamondedc.com" target="_blank" class="btn btn-primary">View
-                                    Project</a>
+                                <a href="https://www.diamondedc.com" target="_blank" class="btn btn-primary">View Project</a>
                             </div>
 
                         </div>
@@ -485,8 +501,7 @@
 
                 <h2>More than just web developer.</h2>
 
-                <p>A combination of technical skills, business experience, and real-world problem solving helps create
-                    solutions that work.</p>
+                <p>A combination of technical skills, business experience, and real-world problem solving helps create solutions that work.</p>
 
             </div>
 
@@ -540,11 +555,9 @@
 
                 <h2>Helping great companies get the attention they deserve.</h2>
 
-                <p>Many businesses provide excellent products and services but struggle to communicate their value
-                    online. My goal is to help bridge that gap with practical digital solutions.</p>
+                <p>Many businesses provide excellent products and services but struggle to communicate their value online. My goal is to help bridge that gap with practical digital solutions.</p>
 
-                <p>From websites and ecommerce to drone media and online visibility, I focus on creating tools that help
-                    organizations connect with customers.</p>
+                <p>From websites and ecommerce to drone media and online visibility, I focus on creating tools that help organizations connect with customers.</p>
 
             </div>
 
@@ -583,8 +596,7 @@
 
                 <h2>Built through communication and collaboration.</h2>
 
-                <p>Strong projects come from understanding expectations, solving problems, and building relationships.
-                </p>
+                <p>Strong projects come from understanding expectations, solving problems, and building relationships.</p>
 
             </div>
 
@@ -613,8 +625,7 @@
                         <div class="quote-mark">"</div>
                         <div class="stars">★★★★★</div>
 
-                        <p>John combines technical knowledge with real business understanding. He looks at the entire
-                            picture, not just the technology.</p>
+                        <p>John combines technical knowledge with real business understanding. He looks at the entire picture, not just the technology.</p>
 
                         <div class="testimonial-person">
                             <strong>- Sarah</strong>
@@ -628,8 +639,7 @@
                         <div class="quote-mark">"</div>
                         <div class="stars">★★★★★</div>
 
-                        <p>Working with John gave us confidence that our project was being handled by someone who cared
-                            about the outcome.</p>
+                        <p>Working with John gave us confidence that our project was being handled by someone who cared about the outcome.</p>
 
                         <div class="testimonial-person">
                             <strong>- Ashley</strong>
@@ -660,8 +670,7 @@
 
                 <h2>Built to grow with your business.</h2>
 
-                <p>Launching a project is only the beginning. Continued support helps keep your digital presence working
-                    as your business evolves.</p>
+                <p>Launching a project is only the beginning. Continued support helps keep your digital presence working as your business evolves.</p>
 
             </div>
 
@@ -671,8 +680,7 @@
 
                     <h3>Website Care</h3>
 
-                    <p>Updates, maintenance, and troubleshooting to keep your website running smoothly.
-                    </p>
+                    <p>Updates, maintenance, and troubleshooting to keep your website running smoothly.</p>
 
                     <!-- <span>MAINTENANCE • SECURITY • UPDATES</span> -->
 
@@ -872,8 +880,7 @@
 
                 <h2>Let's build something useful.</h2>
 
-                <p>Whether you need a new website, professional drone media, improved online visibility, or help with
-                    your digital tools, let's talk about what you are trying to accomplish.</p>
+                <p>Whether you need a new website, professional drone media, improved online visibility, or help with your digital tools, let's talk about what you are trying to accomplish.</p>
 
                 <p>No complicated sales process. Just a conversation about your goals and the best path forward.</p>
 
@@ -982,9 +989,7 @@
 
             <h2>Supporting projects from South Carolina to Idaho and beyond.</h2>
 
-            <p>Based in Summerville, South Carolina, with connections to Sandpoint, Idaho, I work with folks
-                needing professional websites, drone media, online visibility, and digital solutions wherever they are
-                located.</p>
+            <p>Based in Summerville, South Carolina, with connections to Sandpoint, Idaho, I work with folks needing professional websites, drone media, online visibility, and digital solutions wherever they are located.</p>
 
             <div class="location-grid">
 
