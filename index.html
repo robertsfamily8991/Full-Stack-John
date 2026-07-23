@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- ========================================================= GOOGLE ANALYTICS ========================================================== -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ3JBQ45YF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YQ3JBQ45YF');
+    </script>
+
+    <!-- ========================================================= GOOGLE TAG MANAGER ========================================================== -->
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K7Z2Z58B');
+    </script>
+
+    <!-- ========================================================= CORE DOCUMENT SETTINGS ========================================================== -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>What Is SEO? A Practical Guide to Getting Found Online | Full-Stack John</title>
+    <!-- ========================================================= SEO ========================================================== -->
 
-    <meta name="description" content="Learn what SEO is, how search engines work, and how technical SEO, content, local visibility, and search intent help businesses get found online.">
+    <title>Web Design & Digital Operations | Full-Stack John</title>
+
+    <meta name="description" content="Full-Stack John builds and supports websites, ecommerce stores, and digital operations for businesses in Summerville, SC, Sandpoint, ID, and nationwide.">
     <meta name="author" content="Full-Stack John">
+    <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://fullstackjohn.com/blog/what-is-seo.html">
+    <link rel="canonical" href="https://www.fullstackjohn.com/">
 
-    <meta property="og:title" content="What Is SEO? A Practical Guide to Getting Found Online">
-    <meta property="og:description" content="A practical guide to understanding SEO and how it helps businesses become easier to find online.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://fullstackjohn.com/blog/what-is-seo.html">
-    <meta property="og:image" content="https://fullstackjohn.com/assets/images/blog/what-is-seo.jpg">
+    <!-- ========================================================= OPEN GRAPH / SOCIAL SHARING ========================================================== -->
 
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Design & Digital Operations | Full-Stack John">
+    <meta property="og:description" content="Websites, ecommerce support, maintenance, and digital operations from one trusted technical partner.">
+    <meta property="og:url" content="https://www.fullstackjohn.com/">
+    <meta property="og:site_name" content="Full-Stack John">
+    <meta property="og:image" content="https://www.fullstackjohn.com/images/og-image.jpg">
+
+    <!-- ========================================================= TWITTER / X ========================================================== -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Design & Digital Operations | Full-Stack John">
+    <meta name="twitter:description" content="Websites, ecommerce support, maintenance, and digital operations from one trusted technical partner.">
+    <meta name="twitter:image" content="https://www.fullstackjohn.com/images/og-image.jpg">
+
+    <!-- ========================================================= FAVICONS ========================================================== -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+    <meta name="theme-color" content="#0b0f19">
+
+    <!-- ========================================================= FONTS ========================================================== -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ========================================================= STYLES ========================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
+<body id="top">
 
-    <!-- HEADER -->
-    <!-- <header class="site-header">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7Z2Z58B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <div class="container nav-container">
-
-            <a href="index.html" class="logo">
-                <span>FULL-STACK</span>
-                <strong>JOHN</strong>
-            </a>
-
-            <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="main-nav">
-
-                <a href="../index.html#services">Services</a>
-                <a href="../index.html#work">Work</a>
-                <a href="../index.html#about">About</a>
-                <a href="../index.html#plans">Plans</a>
-
-                <a href="../index.html#contact" class="nav-cta">
-                    Start a Project
-                </a>
-
-            </nav>
-
-        </div>
-
-    </header> -->
+    <!-- =========================================================== HEADER =========================================================== -->
 
     <header class="site-header">
 
@@ -66,464 +102,918 @@
             <a class="logo" href="#top">Full-Stack<span> John</span></a>
 
             <nav class="main-nav">
-                <a href="/index.html#web">Website Design</a>
-                <a href="/index.html#drone">Drone Media</a>
-                <a href="/index.html#visibility">Visibility</a>
-                <a href="/index.html#work">Work</a>
-                <a href="/index.html#experience">Experience</a>
-                <a href="/index.html#pricing">Pricing</a>
-                <a href="/index/html#contact">Contact</a>
+                <a href="#web">Website Design</a>
+                <a href="#drone">Drone Media</a>
+                <a href="#visibility">Visibility</a>
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
             </nav>
 
-            <button class="btn btn-primary header-btn" onclick="window.location.href='/index.html#contact'">Start A Project</button>
+            <button class="btn btn-primary header-btn" onclick="window.location.href='#contact'">Start A Project</button>
+            <!-- <a class="btn btn-primary header-btn" href="#contact">Start A Project</a> -->
+
             <button class="menu-btn" aria-label="Menu">☰</button>
 
         </div>
 
     </header>
 
+    <!-- =========================================================== HERO =========================================================== -->
 
-    <!-- MAIN -->
-    <main>
+    <section class="hero">
 
-        <!-- ARTICLE HERO -->
-        <section class="article-hero">
+        <div class="container hero-grid">
 
-            <div class="container article-hero-inner">
+            <div class="hero-copy">
 
-                <div class="article-breadcrumb">
+                <p class="eyebrow">FULL-STACK JOHN</p>
 
-                    <a href="../index.html">Home</a>
+                <h1>Helping customers find and understand what you do.</h1>
 
-                    <span>/</span>
+                <p class="hero-text">I help start-up companies and growing businesses build a stronger online presence through <strong>website design</strong>, <strong>drone media</strong>, and <strong>online visibility services</strong>.</p>
 
-                    <a href="../index.html#blog">Blog</a>
-
-                    <span>/</span>
-
-                    <span>What Is SEO?</span>
-
+                <div class="hero-actions">
+                    <button class="btn btn-primary header-btn" onclick="window.location.href='#contact'">Free Consultation</button>
+                    <!-- <a href="#contact" class="btn btn-primary">Free Consultation</a> -->
+                    <button class="btn btn-secondary header-btn" onclick="window.location.href='#work'">View My Work</button>
+                    <!-- <a href="#work" class="btn btn-secondary">View My Work</a> -->
                 </div>
 
+                <p class="hero-location">Based in <strong>Summerville, SC</strong> • Supporting projects in <strong>Sandpoint, ID</strong> and beyond.</p>
+              
+                <div class="hero-points">
 
-                <div class="article-category">SEO & DIGITAL VISIBILITY</div>
+                    <div>
+                        <strong>Website Design</strong>
+                        <span>Professional websites built around your organization.</span>
+                    </div>
 
+                    <div>
+                        <strong>Drone Media</strong>
+                        <span>Aerial photography and video content.</span>
+                    </div>
 
-                <h1>What Is SEO?</h1>
-
-
-                <p class="article-subtitle">A practical guide to getting found online—and why SEO is about much more than keywords.</p>
-
-
-                <div class="article-meta">
-                    <span>By Full-Stack John</span>
-                    <span>•</span>
-                    <span>July 2026</span>
-                    <span>•</span>
-                    <span>8 min read</span>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- FEATURE IMAGE -->
-        <section class="article-feature-image">
-
-            <div class="container">
-
-                <div class="article-image-placeholder">
-
-                    <div class="placeholder-content">
-
-                        <span class="placeholder-label">FEATURE IMAGE</span>
-
-                        <h2>Local Business Visibility</h2>
-
-                        <p>Replace this placeholder with an image representing a local business becoming more visible online.</p>
-
+                    <div>
+                        <strong>Online Visibility</strong>
+                        <span>Connecting customers with the information they need to take action.</span>
                     </div>
 
                 </div>
 
             </div>
 
-        </section>
+            <div class="hero-image">
+                <img src="images/hero-business.jpg" alt="Full-Stack John - Freelance Web Developer">
+            </div>
 
-        <!-- ARTICLE CONTENT -->
-        <section class="article-content-section">
+        </div>
 
-            <div class="container article-layout">
+    </section>
 
-                <!-- ARTICLE -->
-                <article class="article-content">
+    <!-- =========================================================== INTRO =========================================================== -->
 
-                    <p class="article-lead">If you have a website, you probably want people to find it.</p>
+    <section class="intro">
 
-                    <p>That sounds simple, but showing up in search results involves more than simply building a website and waiting for visitors to arrive.</p>
+        <div class="container">
 
-                    <p>Search engines need to understand what your business does, which searches you are relevant for, and whether your website provides a useful experience for the people who find it.</p>
+            <div class="section-title">
 
-                    <p>That is where <strong>SEO</strong> comes in.</p>
+                <p class="eyebrow">BUILT ON EXPERIENCE</p>
 
-                    <p>SEO stands for <strong>Search Engine Optimization</strong>. It is the process of improving your website and online presence so search engines can better understand your business and connect you with people actively looking for what you offer.</p>
+                <h2>Curated around your business needs.</h2>
 
-                    <p>The goal is not simply to get more traffic.</p>
+                <p>Your digital assets should do more than look good. They should help people find you, trust you, and take action. That's why every project starts with understanding your objectives, your customers, and the challenges you're trying to solve.</p>
 
-                    <p>The goal is to get <strong>more of the right traffic.</strong></p>
+            </div>
 
-                    <!-- SECTION 1 -->
+            <div class="intro-grid">
+
+                <div>
+                    <h3>Real Experience</h3>
+                    <p>Combining web development, sales, customer service, and business operations.</p>
+                </div>
+
+                <div>
+                    <h3>Practical Solutions</h3>
+                    <p>Building digital tools and systems designed around real needs.</p>
+                </div>
+
+                <div>
+                    <h3>Long-Term Support</h3>
+                    <p>The goal is not just launching a website. The goal is becoming a reliable technology partner.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== WEBSITE DESIGN =========================================================== -->
+
+    <section class="service-section service-light" id="web">
+
+        <div class="container service-grid">
+
+            <div class="service-image">
+                <img src="images/website-design.jpg" alt="Website design and ecommerce development">
+            </div>
+
+            <div class="service-content">
+
+                <p class="eyebrow">WEB DESIGN & DEVELOPMENT</p>
+
+                <h2>Websites that represent the quality of your business.</h2>
+
+                <p>Your site is often the first interaction visitors have with your business. I create professional websites, premium guest experiences, and mobile-first designs that help build trust and convert customers.</p>
+
+                <div class="service-features">
+
+                    <div>
+                        <h3>Business Websites</h3>
+                        <p>Modern websites designed around your services and customers.</p>
+                    </div>
+
+                    <div>
+                        <h3>Ecommerce Development</h3>
+                        <p>Online stores built for better product exposure.</p>
+                    </div>
+
+                    <div>
+                        <h3>Website Maintenance</h3>
+                        <p>Updates, redesigns, and improvements for existing websites.</p>
+                    </div>
+
+                </div>
+
+                <button class="btn btn-primary" onclick="window.location.href='#contact'">Discuss Your Site</button>
+                <!-- <a href="#contact" class="btn btn-primary">Discuss Your Site</a> -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== DRONE MEDIA =========================================================== -->
+
+    <section class="service-section service-dark" id="drone">
+
+        <div class="container service-grid drone-layout">
+
+            <div class="service-content">
+
+                <p class="eyebrow">DRONE MEDIA & AERIAL SERVICES</p>
+
+                <h2>Show your work from every angle.</h2>
+
+                <p>Professional drone photography, aerial video, and visual content help businesses showcase properties, projects, and capabilities in ways traditional imagery can't.</p>
+
+                <div class="service-features">
+
+                    <div>
+                        <h3>Drone Photography</h3>
+                        <p>High-quality aerial images for marketing, websites, and presentations.</p>
+                    </div>
+
+                    <div>
+                        <h3>Aerial Video</h3>
+                        <p>Dynamic footage designed to tell your business story.</p>
+                    </div>
+
+                    <div>
+                        <h3>Commercial Content</h3>
+                        <p>Professional visual assets created for your customers.</p>
+                    </div>
+
+                </div>
+
+                <button class="btn btn-light" onclick="window.location.href='#contact'">Explore Drone Media</button>
+                <!-- <a href="#contact" class="btn btn-light">Explore Drone Media</a> -->
+
+            </div>
+
+            <div class="service-image">
+
+                <img src="images/drone-media.jpg" alt="Commercial drone photography and aerial video services">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== ONLINE VISIBILITY =========================================================== -->
+
+    <section class="service-section service-light" id="visibility">
+
+        <div class="container service-grid">
+
+
+            <div class="service-image">
+                <img src="images/online-visibility.jpg" alt="Online visibility services">
+            </div>
+
+
+            <div class="service-content">
+
+                <p class="eyebrow">ONLINE VISIBILITY</p>
+
+                <h2>Make your business easier to find, easier to understand, and easier to choose.</h2>
+
+                <p>Great companies deserves to be seen. I help improve online visibility through stronger websites, better business profiles, quality content, and digital improvements.</p>
+
+                <div class="service-features">
+
+                    <div>
+                        <h3>Local Visibility</h3>
+                        <p>Improve your online presence where customers are searching.</p>
+                    </div>
+
+                    <div>
+                        <h3>Google Business</h3>
+                        <p>Upgrade your profile information and customer experience.</p>
+                    </div>
+
+                    <div>
+                        <h3>Content Strategy</h3>
+                        <p>Create useful content that builds trust and supports growth.</p>
+                    </div>
+
+                </div>
+
+                <button class="btn btn-primary" onclick="window.location.href='#contact'">Improve Your Visibility</button>
+                <!-- <a href="#contact" class="btn btn-primary">Improve Your Visibility</a> -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== FEATURED WORK =========================================================== -->
+
+    <section class="work-section" id="work">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p class="eyebrow">FEATURED WORK</p>
+
+                <h2>Projects built around real challenges.</h2>
+
+                <p>A collection of websites, ecommerce platforms, and digital solutions built to improve visibility and operations.</p>
+
+            </div>
+
+            <div class="work-slider">
+
+                <button class="slider-btn work-prev" aria-label="Previous Project">‹</button>
+
+                <div class="work-track">
+
+                    <article class="work-card">
+
+                        <img src="images/projects/selkirk-offroad.jpg" alt="Selkirk Off Road website project">
+
+                        <div class="work-body">
+
+                            <p class="work-category">WEB DESIGN • ECOMMERCE</p>
+
+                            <h3>Selkirk Off Road</h3>
+
+                            <p>A complete digital presence created for an off-road business focused on services, builds, and future ecommerce growth.</p>
+
+                            <div class="work-details">
+                                <!-- <span>Overland Builds</span>
+                                <span>Ecommerce</span>
+                                <span>Business Growth</span> -->
+                                <a href="https://www.selkirkoffroad.com" target="_blank" class="btn btn-primary">View Project</a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="work-card">
+
+                        <img src="images/projects/djali-black.jpg" alt="Djali Black brand and ecommerce project">
+
+                        <div class="work-body">
+
+                            <p class="work-category">VISIBILITY • SEARCH OPTIMIZATION</p>
+
+                            <h3>Djali Black</h3>
+
+                            <p>A professional website designed to help attract customers, build loyalty and convert leads into paying clients.</p>
+
+                            <div class="work-details">
+                                <!-- <span>Brand Development</span>
+                                <span>Services Presentation</span>
+                                <span>Lead Generation</span> -->
+                                <a href="https://www.myretirementspecialist.com" target="_blank" class="btn btn-primary">View Project</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="work-card">
+
+                        <img src="images/projects/datum-geospace.jpg" alt="Datum Geospace drone mapping project">
+
+                        <div class="work-body">
+
+                            <p class="work-category">DRONE MEDIA • DIGITAL TOOLS</p>
+
+                            <h3>Datum Geospace</h3>
+
+                            <p>A specialized project including drone services, process improvement, and visual data solutions.</p>
+
+                            <div class="work-details">
+                                <!-- <span>Aerial Media</span>
+                                <span>Mapping</span>
+                                <span>Visualization</span> -->
+                                <a href="https://www.datumgeospace.com" target="_blank" class="btn btn-primary">View Project</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="work-card">
+
+                        <img src="images/projects/diamond-edc.jpg" alt="Diamond EDC ecommerce website project">
+
+                        <div class="work-body">
+
+                            <p class="work-category">ECOMMERCE DEVELOPMENT</p>
+
+                            <h3>Diamond EDC</h3>
+
+                            <p>A premium ecommerce store focused on product presentation, customer engagement, and scalable growth.</p>
+
+                            <div class="work-details">
+                                <!-- <span>WooCommerce</span>
+                                <span>Product Systems</span>
+                                <span>Online Store</span> -->
+                                <a href="https://www.diamondedc.com" target="_blank" class="btn btn-primary">View Project</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <button class="slider-btn work-next" aria-label="Next Project">›</button>
+
+            </div>
+
+            <div class="custom-tools">
+
+                <p class="eyebrow">WHILE YOU'RE HERE</p>
+
+                <!-- <h2>Projects built around real challenges.</h2> -->
+
+                <p>Check out this cool <a href="/calls" target="_blank"><strong>call log</strong></a> that I built for somebody who kept losing their post-its.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== EXPERIENCE =========================================================== -->
+
+    <section class="experience-section" id="experience">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p class="eyebrow">WHY FULL-STACK JOHN</p>
+
+                <h2>More than just web developer.</h2>
+
+                <p>A combination of technical skills, business experience, and real-world problem solving helps create solutions that work.</p>
+
+            </div>
+
+            <div class="experience-grid">
+
+                <div class="experience-item">
+                    <h3>One Point of Contact</h3>
+                    <p>Web development, ecommerce support, updates, and troubleshooting from one trusted partner.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Ecommerce Systems</h3>
+                    <p>Online stores, product management, and customer experiences.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Aerial Media</h3>
+                    <p>Commercial drone photography, video, indoor flythoughs, and visual storytelling.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Business Operations</h3>
+                    <p>Understanding workflows, customers, and daily business challenges.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Technical Support</h3>
+                    <p>Troubleshooting, updates, improvements, and ongoing assistance.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Process Improvement</h3>
+                    <p>Finding practical ways to improve how businesses operate.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== WHY I DO THIS =========================================================== -->
+
+    <section class="story-section">
+
+        <div class="container story-grid">
+
+            <div class="story-content">
+
+                <p class="eyebrow">WHY I DO THIS</p>
+
+                <h2>Great businesses deserve to be seen.</h2>
+
+                <p>I do this because too many great businesses are overlooked—not because they lack quality, but because their online presence doesn't reflect the value they provide.</p>
+
+                <p>I help close that gap by creating practical digital tools that make businesses easier to find, understand, and trust. From websites and ecommerce to drone media and online visibility, my work is about helping good companies get the attention they deserve.</p>
+
+            </div>
+
+            <div class="story-points">
+
+                <div>
+                    <strong>Listen First</strong>
+                    <span>Understanding your goals before recommending solutions.</span>
+                </div>
+
+                <div>
+                    <strong>Keep It Practical</strong>
+                    <span>Tech should simplify your operation, not complicate it.</span>
+                </div>
+
+                <div>
+                    <strong>Build For Growth</strong>
+                    <span>Solutions designed to support where you're going.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== TRUSTED PARTNERSHIPS =========================================================== -->
+
+    <section class="testimonial-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p class="eyebrow">TRUSTED PARTNERSHIPS</p>
+
+                <h2>Built through communication and collaboration.</h2>
+
+                <p>Strong projects come from understanding expectations, solving problems, and building relationships.</p>
+
+            </div>
+
+            <div class="testimonial-slider">
+
+                <button class="slider-btn testimonial-prev" aria-label="Previous Testimonial">‹</button>
+
+                <div class="testimonial-track">
+
+                    <article class="testimonial-card">
+
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>John built our website from the ground up and continues to manage everything tied to it. Updates, functionality, improvements, and overall strategy. I would absolutely recommend John to any company looking for someone who takes ownership of their work and consistently delivers.</p>
+
+                        <div class="testimonial-person">
+                            <strong>- Colton</strong>
+                            <span>Selkirk Off Road</span>
+                        </div>
+
+                    </article>
+
+                    <article class="testimonial-card">
+
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>John combines technical knowledge with real business understanding. He looks at the entire picture, not just the technology.</p>
+
+                        <div class="testimonial-person">
+                            <strong>- Sarah</strong>
+                            <span>Datum Geospace</span>
+                        </div>
+
+                    </article>
+
+                    <article class="testimonial-card">
+
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>Working with John gave us confidence that our project was being handled by someone who cared about the outcome.</p>
+
+                        <div class="testimonial-person">
+                            <strong>- Ashley</strong>
+                            <span>Low Country Shine</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <button class="slider-btn testimonial-next" aria-label="Next Testimonial">›</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== SUPPORT =========================================================== -->
+
+    <section class="support-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p class="eyebrow">ONGOING SUPPORT</p>
+
+                <h2>Built to grow with your business.</h2>
+
+                <p>Launching a project is only the beginning. Continued support helps keep your digital presence working as your business evolves.</p>
+
+            </div>
+
+            <div class="support-grid">
+
+                <div class="support-card">
+
+                    <h3>Website Care</h3>
+
+                    <p>Updates, maintenance, and troubleshooting to keep your website running smoothly.</p>
+
+                    <!-- <span>MAINTENANCE • SECURITY • UPDATES</span> -->
+
+                </div>
+
+                <div class="support-card">
+
+                    <h3>Digital Partnership</h3>
+
+                    <p>Ongoing guidance for those needing reliable technology support.</p>
+
+                    <!-- <span>STRATEGY • SUPPORT • GROWTH</span> -->
+
+                </div>
+
+                <div class="support-card">
+
+                    <h3>Project Support</h3>
+
+                    <p>Assistance with new ideas, upgrades, and technology implementation.</p>
+
+                    <!-- <span>CONSULTING • DEVELOPMENT • SOLUTIONS</span> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== PRICE TABLES =========================================================== -->
+
+    <section class="experience-section" id="pricing">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p class="eyebrow">SITES & CARE PLANS</p>
+
+                <h2>Predictable support without unpredictable costs.</h2>
+
+                <p>Most businesses prefer ongoing support instead of tracking every hour. Care Plans provide proactive maintenance and priority assistance.</p>
+
+            </div>
+
+            <div class="plans-grid">
+
+                    <article class="plan-card">
+
+                         <h3>Web Design & Development</h3>
+
+                         <div class="price"><span>Starting at</span>
+                            <br/ >
+                            $1,500
+
+                         </div>
+
+                         <ul>
+                              <li>Custom website design</li>
+                              <li>Mobile responsive layout</li>
+                              <li>Business-focused page structure</li>
+                              <li>Contact forms</li>
+                              <li>Basic SEO setup</li>
+                              <li>Google Business integration</li>
+                              <li>Analytics setup</li>
+                              <li>Launch support</li>
+                         </ul>
+
+                         <div class="price"><br/ ><span>Best for</span></div>
+
+                         <ul>
+                            <li>New businesses</li>
+                            <li>Service providers</li>
+                            <li>Companies needing a website refresh</li>
+                         </ul>
+
+                    </article>
+
+                    <article class="plan-card featured">
+
+                         <div class="badge">MOST POPULAR</div>
+
+                         <h3>Website Care Plans</h3>
+                         <span><br/ ></span>
+
+                         <div class="price"><span>Starting at</span>
+                            <br/ >
+                            $99
+                            <span>/month</span>
+
+                         </div>
+
+                         <ul>
+                              <li>Website monitoring</li>
+                              <li>Security checks</li>
+                              <li>Backups</li>
+                              <li>Software updates</li>
+                              <li>Content updates</li>
+                              <li>Website support</li>
+                         </ul>
+
+                         <div class="price"><br/ ><span>Best for</span></div>
+
+                         <ul>
+                            <li>Companies needing ongoing help</li>
+                            <li>Owners who don't want to manage technology</li>
+                         </ul>
+
+                    </article>
+
+                    <article class="plan-card">
+
+                         <h3>Ecommerce Management</h3>
+
+                         <div class="price"><span>Starting at</span>
+                            <br/ >
+                            $499
+                            <span>/month</span>
+
+                         </div>
+
+                         <ul>
+                              <li>Product updates</li>
+                              <li>Store maintenance</li>
+                              <li>Technical support</li>
+                              <li>Platform updates</li>
+                              <li>Troubleshooting</li>
+                              <li>Store improvements</li>
+                         </ul>
+
+                         <div class="price"><br/ ><span>Best for</span></div>
+
+                         <ul>
+                            <li>Retail businesses</li>
+                            <li>Product brands</li>
+                            <li>Growing online stores</li>
+                         </ul>
+
+                         <div class="price"><br/ ><span>Supports</span></div>
+
+                         <ul>
+                            <li>WooCommerce</li>
+                            <li>Shopify</li>
+                            <li>Online storefronts</li>
+                         </ul>
+
+                    </article>
+
+                    <article class="plan-card">
+
+                         <h3>Digital Operations Partner</h3>
+
+                         <div class="price"><span>Starting at</span>
+                            <br/ >
+                            $750
+                            <span>/month</span>
+
+                         </div>
+
+                         <ul>
+                              <li>Website management</li>
+                              <li>Digital consulting</li>
+                              <li>SEO assistance</li>
+                              <li>Content updates</li>
+                              <li>Marketing coordination</li>
+                              <li>Strategy support</li>
+                              <li>Priority response</li>
+                         </ul>
+
+                         <div class="price"><br/ ><span>Best for</span></div>
+
+                         <ul>
+                            <li>Businesses without internal technical support</li>
+                            <li>Growing companies</li>
+                            <li>Owners who want one person managing their digital systems</li>
+                         </ul>
+
+                    </article>
+
+               </div>
+
+        </div>
+
+    </section>
     
-                    <h2 id="search-engines">How Search Engines Work</h2>
+    <!-- =========================================================== CONTACT =========================================================== -->
 
-                    <p>When someone searches for something on Google, the search engine has to determine which results are most useful.</p>
+    <section class="contact-section" id="contact">
 
-                    <p>It considers many factors, including:</p>
+        <div class="container contact-grid">
 
-                    <ul>
-                        <li>What the page is about</li>
-                        <li>Whether the content answers the searcher's question</li>
-                        <li>How relevant the website is to the search</li>
-                        <li>Whether the business appears trustworthy</li>
-                        <li>How well the website works on mobile devices</li>
-                        <li>How quickly the page loads</li>
-                        <li>Whether other reputable websites reference the business</li>
-                        <li>Where the searcher is located</li>
-                        <li>What the searcher is actually trying to accomplish</li>
-                    </ul>
+            <div class="contact-copy">
 
-                    <p>Search engines are constantly trying to answer one basic question:</p>
+                <p class="eyebrow">START A PROJECT</p>
 
-                    <blockquote>Which result is most likely to help this person?</blockquote>
+                <h2>Let's build something useful.</h2>
 
-                    <p>Effective SEO helps your business make that answer easier to find.</p>
+                <p>Whether you need a new website, professional drone media, improved online visibility, or help with your digital tools, let's talk about what you are trying to accomplish.</p>
 
-                    <!-- SECTION 2 -->
-     
-                    <h2 id="keywords">SEO Is More Than Keywords</h2>
+                <p>No complicated sales process. Just a conversation about your goals and the best path forward.</p>
 
-                    <p>One of the biggest misconceptions about SEO is that it simply means adding keywords to a webpage.</p>
+                <div class="contact-links">
 
-                    <p>Keywords are important, but modern SEO is much broader than repeating phrases throughout your content.</p>
+                    <!-- <a href="#" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.9-1.7 3.8-1.9-.9-.2-1.9-.5-2.7-1.2-.8-.7-1.1-1.7-1.1-3.1 0-.7.2-1.3.6-1.8-.1-.2-.3-.9.1-1.8 0 0 .9-.3 2.9 1.1.8-.2 1.7-.3 2.5-.3s1.7.1 2.5.3c2-1.4 2.9-1.1 2.9-1.1.4.9.2 1.6.1 1.8.4.5.6 1.1.6 1.8 0 1.4-.4 2.4-1.1 3.1-.8.7-1.8 1-2.7 1.2 3 .2 3.8 1.8 3.8 1.9 0 0 .7 0 1.7-1.1 0 0-.8-.4-1.3-1.7 0 0-.7-2.1-3.9-1.4v2.1c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z" />
+                        </svg>
+                    </a> -->
 
-                    <p>For example, a landscaping company might want to appear for searches such as:</p>
+                    <!-- <a href="#" aria-label="Replit">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 3h18v18H3V3zm4 4v10h10v-3H10V7H7z" />
+                        </svg>
+                    </a> -->
 
-                    <ul>
-                        <li>Landscaping services near me</li>
-                        <li>Landscape design</li>
-                        <li>Lawn installation</li>
-                        <li>Retaining wall contractor</li>
-                        <li>Commercial landscaping services</li>
-                    </ul>
+                    <a href="https://www.youtube.com/@fullstackjohn" aria-label="YouTube" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M23.5 6.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.8 2.5 12 2.5 12 2.5s-4.8 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.2 8.2.2 10.2v1.6c0 2 .3 4 .3 4s.2 1.7.9 2.4c.9.9 2.1.8 2.7.9 2 .2 8.1.3 8.1.3s4.8 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.3-2 .3-4v-1.6c0-2-.5-4-.5-4zM9.6 14.5v-7l6.4 3.5-6.4 3.5z" />
+                        </svg>
+                    </a>
 
-                    <p>Simply placing those phrases on a webpage does not automatically make that page valuable.</p>
+                    <a href="https://www.instagram.com/fullstackjohn" aria-label="Instagram" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM17.5 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.5 6z" />
+                        </svg>
+                    </a>
 
-                    <p>Search engines also need to understand:</p>
-
-                    <ul>
-                        <li>What services the company actually provides</li>
-                        <li>Where the company operates</li>
-                        <li>Who the services are intended for</li>
-                        <li>Whether the website provides useful information</li>
-                        <li>Whether the business appears legitimate and trustworthy</li>
-                    </ul>
-
-                    <p>SEO is about building that complete picture.</p>
-
-                    <!-- SECTION 3 -->
-            
-                    <h2 id="three-areas">The Three Major Areas of SEO</h2>
-
-                    <p>SEO is often divided into three primary areas: <strong>technical SEO, on-page SEO, and off-page SEO.</strong></p>
-
-                    <p>All three work together.</p>
-
-                    <h3>Technical SEO</h3>
-
-                    <p>Technical SEO focuses on the foundation of your website.</p>
-
-                    <p>A website can look excellent to a visitor and still have technical problems that make it difficult for search engines to crawl, understand, and index.</p>
-
-                    <p>Technical SEO may include:</p>
-
-                    <ul>
-                        <li>Website performance</li>
-                        <li>Mobile responsiveness</li>
-                        <li>Crawlability and indexing</li>
-                        <li>Website structure</li>
-                        <li>Internal linking</li>
-                        <li>Metadata</li>
-                        <li>Structured data</li>
-                        <li>Secure HTTPS connections</li>
-                        <li>Broken links</li>
-                        <li>Redirects</li>
-                        <li>Image optimization</li>
-                    </ul>
-
-                    <p>This is one reason SEO and web development are closely connected.</p>
-
-                    <p>A technically sound website gives search engines a better foundation to work with while providing visitors with a better experience.</p>
-
-                    <h3>On-Page SEO</h3>
-
-                    <p>On-page SEO focuses on the content and structure of individual pages.</p>
-
-                    <p>Every page on your website should have a purpose.</p>
-
-                    <p>A service page should clearly explain a service. A location page should explain where you operate. An educational article should answer a question or provide useful information.</p>
-
-                    <p>On-page SEO can include:</p>
-
-                    <ul>
-                        <li>Page titles</li>
-                        <li>Meta descriptions</li>
-                        <li>Headings</li>
-                        <li>Page content</li>
-                        <li>Image alt text</li>
-                        <li>Internal links</li>
-                        <li>Service descriptions</li>
-                        <li>Location information</li>
-                        <li>Search intent</li>
-                    </ul>
-
-                    <p>The most important question is:</p>
-
-                    <blockquote>Does this page clearly answer what the visitor is looking for?</blockquote>
-
-                    <h3>Off-Page SEO</h3>
-
-                    <p>Off-page SEO focuses on signals that exist outside your website.</p>
-
-                    <p>This may include:</p>
-
-                    <ul>
-                        <li>Business directory listings</li>
-                        <li>Industry-specific directories</li>
-                        <li>Local citations</li>
-                        <li>Links from other websites</li>
-                        <li>Digital PR</li>
-                        <li>Reviews</li>
-                        <li>Brand mentions</li>
-                        <li>Local business information</li>
-                    </ul>
-
-                    <p>For local businesses, consistency is particularly important.</p>
-
-                    <p>Your business name, address, phone number, website, and other information should be accurate and consistent across the places where your business appears online.</p>
-
-                    <!-- SECTION 4 -->
-       
-                    <h2 id="local-seo">Local SEO: Getting Found in Your Service Area</h2>
-
-                    <p>For many small businesses, local SEO is one of the most valuable parts of an online marketing strategy.</p>
-
-                    <p>If you serve a specific area, you want to be visible when people in that area search for your services.</p>
-
-                    <p>For example:</p>
-
-                    <ul>
-                        <li>“web designer near me”</li>
-                        <li>“small engine repair Sandpoint”</li>
-                        <li>“roofing contractor in [city]”</li>
-                        <li>“landscaping services near me”</li>
-                    </ul>
-
-                    <p>Local SEO helps search engines connect your business with geographic searches.</p>
-
-                    <p>This can involve:</p>
-
-                    <ul>
-                        <li>Your website</li>
-                        <li>Your Google Business Profile</li>
-                        <li>Local business directories</li>
-                        <li>Customer reviews</li>
-                        <li>Location-specific content</li>
-                        <li>Consistent business information</li>
-                        <li>Local relevance and authority</li>
-                    </ul>
-
-                    <p>Your website and your Google Business Profile should work together.</p>
-
-                    <p>Your website provides depth and information about your business. Your business profile helps people discover you through local search and maps.</p>
-
-                    <!-- SECTION 5 -->
-          
-                    <h2 id="search-intent">SEO Is About Search Intent</h2>
-
-                    <p>A successful SEO strategy starts with understanding <strong>why someone is searching.</strong></p>
-
-                    <p>Consider these searches:</p>
-
-                    <h3>“What is SEO?”</h3>
-
-                    <p>This person is looking for information.</p>
-
-                    <h3>“SEO consultant near me”</h3>
-
-                    <p>This person may be looking for a service provider.</p>
-
-                    <h3>“How much does SEO cost?”</h3>
-
-                    <p>This person may be researching pricing and comparing options.</p>
-
-                    <p>These searches have different intentions.</p>
-
-                    <p>A good SEO strategy does not simply target keywords. It creates the right content and pages for the different questions people ask throughout the buying process.</p>
-
-                    <!-- SECTION 6 -->
-        
-                    <h2 id="website">Why Your Website Matters to SEO</h2>
-
-                    <p>Your website is often the central hub of your online presence.</p>
-
-                    <p>Social media profiles can change. Advertising campaigns can stop. Third-party platforms can change their algorithms.</p>
-
-                    <p>Your website is an asset that you control.</p>
-
-                    <p>A strong website should:</p>
-
-                    <ul>
-                        <li>Clearly explain what your business does</li>
-                        <li>Make it easy to contact you</li>
-                        <li>Work well on mobile devices</li>
-                        <li>Load quickly</li>
-                        <li>Provide useful information</li>
-                        <li>Make your services easy to understand</li>
-                        <li>Build trust</li>
-                        <li>Support your broader online presence</li>
-                    </ul>
-
-                    <p>A website should not just exist.</p>
-
-                    <p>It should help your business accomplish something.</p>
-
-                    <!-- SECTION 7 -->
-            
-                    <h2 id="timeline">How Long Does SEO Take?</h2>
-
-                    <p>SEO is a long-term process.</p>
-
-                    <p>Some improvements can produce relatively quick results, particularly when a website has obvious technical problems or missing information.</p>
-
-                    <p>Other results take longer.</p>
-
-                    <p>Search engines need time to crawl changes, evaluate content, understand your business, and determine how your website compares with other websites competing for the same searches.</p>
-
-                    <p>The timeline can depend on:</p>
-
-                    <ul>
-                        <li>Your industry</li>
-                        <li>Your location</li>
-                        <li>Your competition</li>
-                        <li>The condition of your existing website</li>
-                        <li>The quality of your content</li>
-                        <li>Your website's authority</li>
-                        <li>The search terms you are targeting</li>
-                    </ul>
-
-                    <p>There is no honest SEO strategy that can guarantee a specific ranking on a specific date.</p>
-
-                    <p>Good SEO is about building a stronger, more useful, and more trustworthy online presence over time.</p>
-
-                    <!-- SECTION 8 -->
-           
-                    <h2 id="foundation">Good SEO Starts with a Good Business Foundation</h2>
-
-                    <p>SEO cannot fix every business problem.</p>
-
-                    <p>If your website is attracting the right visitors but your services are unclear, your pricing is confusing, or your contact process is difficult, more traffic may not solve the problem.</p>
-
-                    <p>The best SEO strategy connects your online presence to the actual way your business operates.</p>
-
-                    <p>That means understanding:</p>
-
-                    <ul>
-                        <li>What you sell</li>
-                        <li>Who you serve</li>
-                        <li>Where you operate</li>
-                        <li>What makes you different</li>
-                        <li>What questions your customers ask</li>
-                        <li>What actions you want visitors to take</li>
-                    </ul>
-
-                    <p>The best-performing websites are not built for search engines alone.</p>
-
-                    <p>They are built for people first, while making it easy for search engines to understand the value those websites provide.</p>
-
-                    <!-- CONCLUSION -->
-        
-                    <h2>So, What Is SEO?</h2>
-
-                    <p>SEO is the ongoing process of making your business easier to understand, discover, and trust online.</p>
-
-                    <p>It combines:</p>
-
-                    <ul>
-                        <li>Technical website development</li>
-                        <li>Content strategy</li>
-                        <li>Search intent</li>
-                        <li>Local visibility</li>
-                        <li>Website performance</li>
-                        <li>Business information</li>
-                        <li>Authority and trust</li>
-                    </ul>
-
-                    <p>The goal is not to manipulate search engines.</p>
-
-                    <p>The goal is to build a better online presence that deserves to be found.</p>
-
-                    <p>At Full-Stack John, SEO is approached as part of the larger digital operation of your business. Your website, content, technical foundation, local visibility, and customer journey should all work together.</p>
-
-                    <p>Because getting found is only the first step.</p>
-
-                    <p>The real goal is helping the right customer understand what you do—and giving them a clear reason to contact you.</p>
-
-                    <!-- CTA -->
-         
-                    <div class="article-cta">
-
-                        <span class="article-category">READY TO IMPROVE YOUR VISIBILITY?</span>
-
-                        <h2>Your website should work harder for your business.</h2>
-
-                        <p>Full-Stack John helps businesses build, maintain, and improve the digital systems that support their growth.</p>
-
-                        <a href="../index.html#contact" class="btn btn-primary">Start a Project</a>
-
-                    </div>
-
-                </article>
-
-                <!-- SIDEBAR -->
-          
-                <aside class="article-sidebar">
-
-                    <div class="sidebar-card">
-
-                        <span class="sidebar-label">IN THIS ARTICLE</span>
-
-                        <nav class="article-toc">
-                            <a href="#search-engines">How Search Engines Work</a>
-                            <a href="#keywords">SEO Is More Than Keywords</a>
-                            <a href="#three-areas">The Three Major Areas of SEO</a>
-                            <a href="#local-seo">Local SEO</a>
-                            <a href="#search-intent">Search Intent</a>
-                            <a href="#website">Why Your Website Matters</a>
-                            <a href="#timeline">How Long Does SEO Take?</a>
-                            <a href="#foundation">The Business Foundation</a>
-                        </nav>
-
-                    </div>
-
-                </aside>
+                </div>
 
             </div>
 
-        </section>
+            <div class="contact-card">
 
-    </main>
+                <h3>Tell me about your project.</h3>
 
-    <!-- FOOTER -->
+                <form class="contact-form" action="https://formspree.io/f/mzdlnodl" method="POST">
+
+                    <!-- Formspree Email Subject -->
+
+                    <input type="hidden" name="_subject" value="Full-Stack John : Website Inquiry">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Project Type</label>
+
+                        <select name="project_type" required>
+                            <option>Website Design</option>
+                            <option>Drone Media</option>
+                            <option>Online Visibility</option>
+                            <option>Ecommerce</option>
+                            <option>Other</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+
+                    <!-- Form Success / Error Message -->
+
+                    <p class="form-success">Thanks! Your message has been received.</p>
+                    <p class="form-error">Sorry, something went wrong. Please try again.</p>
+
+                    <!-- Spam Protection -->
+
+                    <input type="text" name="_gotcha" style="display:none">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== LOCATIONS =========================================================== -->
+
+    <section class="locations">
+
+        <div class="container">
+
+            <p class="eyebrow">SERVING BUSINESSES BEYOND LOCATION</p>
+
+            <h2>Supporting projects from South Carolina to Idaho and beyond.</h2>
+
+            <p>Based in Summerville, South Carolina, with connections to Sandpoint, Idaho, I work with folks needing professional websites, drone media, online visibility, and digital solutions wherever they are located.</p>
+
+            <div class="location-grid">
+
+                <div>
+                    <strong>Summerville, SC</strong>
+                    <span>Primary Operations</span>
+                </div>
+
+                <div>
+                    <strong>Sandpoint, ID</strong>
+                    <span>Travel & Project Support</span>
+                </div>
+
+                <div>
+                    <strong>Remote Projects</strong>
+                    <span>Nationwide Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================== FOOTER =========================================================== -->
 
     <footer class="footer">
 
@@ -549,7 +1039,7 @@
 
                 <h3>Explore</h3>
 
-                <a href="#top">What Is SEO?</a>
+                <a href="/what-is-seo.html#top" target="_blank">What Is SEO?</a>
                 <a href="#work">Featured Work</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact">Start A Project</a>
@@ -588,39 +1078,7 @@
 
     </footer>
 
-    <!-- MOBILE NAVIGATION -->
-
-    <script>
-
-        const menuBtn = document.querySelector('.menu-btn');
-        const mainNav = document.querySelector('.main-nav');
-
-        if (menuBtn && mainNav) {
-
-            menuBtn.addEventListener('click', () => {
-
-                const isOpen = menuBtn.classList.toggle('active');
-
-                mainNav.classList.toggle('active');
-                menuBtn.setAttribute('aria-expanded', isOpen);
-
-            });
-
-            mainNav.querySelectorAll('a').forEach(link => {
-
-                link.addEventListener('click', () => {
-
-                    menuBtn.classList.remove('active');
-                    mainNav.classList.remove('active');
-                    menuBtn.setAttribute('aria-expanded', 'false');
-
-                });
-
-            });
-
-        }
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
