@@ -1666,3 +1666,29 @@ html {
     }
 
 }
+
+/* ========================================= FEATURE IMAGE ========================================= */
+
+.article-feature-image {
+    padding: 40px 0 70px;
+    background: var(--dark-bg);
+}
+
+.article-feature-figure {
+    margin: 0;
+}
+
+.article-feature-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.article-feature-figure figcaption {
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-align: center;
+}
